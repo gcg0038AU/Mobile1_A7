@@ -36,7 +36,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("selected cell \(indexPath.row)")
+        //print("selected cell \(indexPath.row)")
         electionYear = elections[indexPath.row].year
         electionPresident = elections[indexPath.row].president
         self.performSegue(withIdentifier: "toElectionInfo", sender: self)
